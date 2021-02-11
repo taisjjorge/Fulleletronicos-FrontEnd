@@ -1,0 +1,39 @@
+
+.intro {
+    /* no-repeat para nao repetir a foto(padrao) e 'center center' para alinhar o background no centro tanto esq/dir quanto cima/baixo;
+     background-size -> cover, a imagem fica responsiva*/
+    background: url('https://image.freepik.com/fotos-gratis/celulares-antigos-no-vermelho_136401-691.jpg') no-repeat center center;
+    background-size: cover;
+    margin-top: -110px;
+    margin-left: -20px;
+    margin-right: -20px;
+    padding: 200px 0;
+    text-align: center;
+    color: #252525;
+}
+
+.intro h1 {
+    text-transform: uppercase;
+    font-size: 3em;
+    text-shadow: 3px 1px;
+}
+
+.intro h1::after {
+    content: '';
+    display: block;
+    width: 20px;
+    height: 4px;
+    background: #252525;
+    margin: 10px auto;
+}
+
+.intro p {
+    font-style: italic;
+    font-size: 1.125em;
+}
+
+@media (max-width:739px) {
+    .intro {
+        padding: 60px 0;
+    }
+}
